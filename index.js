@@ -29,5 +29,9 @@ function goToSlide(n) {
 function init() {
   goToSlide(index);
   slider.addEventListener("click", handleClickSlider);
+
+  setTimeout(function () {
+    slider.style.opacity = 1;
+  }, 500);
 }
 init();
